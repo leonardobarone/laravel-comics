@@ -26,7 +26,10 @@
             <li><a href="#">SHOP</a></li>    
         </ul>
     </nav>
-    <input type="text" placeholder="Search">
+    <div class="prova">
+        <input type="text" placeholder="Search">
+        <i class="fas fa-search"></i>
+    </div>
 </header>
 
 <div class="hero">

@@ -6133,8 +6133,8 @@ header input {
   font-weight: bold;
   border-style: none;
   border-bottom: 3px solid #0282f9;
-  padding-right: 6px;
-  padding-bottom: 3px;
+  padding-right: 30px;
+  padding-bottom: 8px;
 }
 header input::-moz-placeholder {
   color: #303030;
@@ -6144,6 +6144,14 @@ header input:-ms-input-placeholder {
 }
 header input::placeholder {
   color: #303030;
+}
+header .prova {
+  position: relative;
+}
+header .prova i {
+  position: absolute;
+  right: 7px;
+  bottom: 10px;
 }
 
 .hero {

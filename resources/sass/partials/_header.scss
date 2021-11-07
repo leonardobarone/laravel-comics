@@ -40,10 +40,18 @@ header {
         font-weight: bold;
         border-style: none;
         border-bottom: 3px solid $one_color;
-        padding-right: 6px;
-        padding-bottom: 3px;
+        padding-right: 30px;
+        padding-bottom: 8px;
         &::placeholder {
             color: $two_color;
+        }
+    }
+    .prova {
+        position: relative;
+        i {
+            position: absolute;
+            right: 7px;
+            bottom: 10px;
         }
     }
 }
