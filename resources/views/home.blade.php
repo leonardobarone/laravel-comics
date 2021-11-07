@@ -27,6 +27,21 @@
             </div>
         </div>
     </div>
+    <div class="section_blue">
+        <div class="container">
+             <div class="options">
+                    @foreach ($options as $option)
+                        <div class="column">
+                            <div class="option">
+                                <img src="{{asset("../images/{$option['path']}")}}" alt="">
+                                <h3>{{$option['name']}}</h3>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 @endsection
 

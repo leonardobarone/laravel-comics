@@ -19,8 +19,12 @@ Route::get('/', function () {
     $tmp = [
         "dischi" => $data
     ];
+    $data2 = config('options');
+    $tmp2 = [
+        'options' => $data2
+    ];
 
     // formula contratta
     // return view('home', ["data" => $data]);
-    return view('home', $tmp);
+    return view('home', $tmp, $tmp2);
 })->name('home');
