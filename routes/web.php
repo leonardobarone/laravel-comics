@@ -28,3 +28,17 @@ Route::get('/', function () {
     // return view('home', ["data" => $data]);
     return view('home', $tmp, $tmp2);
 })->name('home');
+
+
+
+
+Route::get('/disco/{id}', function($id) {
+    $data = config('comics');
+    if ($id >= count($data)) {
+        abort('404');
+    } else {
+        $disco = $data[$id];
+    }
+
+    return view('disco', $disco);
+})->where('id', '[0-9]+')->name('singolo-disco');

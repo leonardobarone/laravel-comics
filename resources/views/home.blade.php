@@ -11,9 +11,9 @@
                 CURRENT SERIES
             </h2>
             <div class="container-dischi">
-                @foreach ($dischi as $disco)
+                @foreach ($dischi as $index => $disco)
                     <div class="column">
-                        <a href="#">
+                        <a href="{{route('singolo-disco', ["id" => $index])}}">
                             <div class="eroe">
                                 <img src="{{$disco['thumb']}}" alt="">
                                 <h3>{{strtoupper($disco['title'])}}</h3>
